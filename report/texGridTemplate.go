@@ -26,9 +26,6 @@ const defaultGridTemplate = `
 
 \graphicspath{ {images/} }
 \begin{document}
-\title{[[.Title]] [[if .VariableValues]] \\ \large [[.VariableValues]] [[end]] [[if .Description]] \\ \small [[.Description]] [[end]]}
-\date{[[.FromFormatted]]\\to\\[[.ToFormatted]]}
-\maketitle
 \begin{center}
 [[range .Panels]][[if .IsPartialWidth]]\begin{minipage}{[[.Width]]\textwidth}
 \includegraphics[width=\textwidth]{image[[.Id]]}
